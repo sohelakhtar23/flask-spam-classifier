@@ -69,15 +69,15 @@
         $('h3').remove()
         let msg_category
         if (msg.category == '0') {
-          msg_category = ' <div style="color: green"> Ham </div>'
+          msg_category = ' <div id="rcorners" style="color: green"> Ham </div>'
         }
         else {
-          msg_category = ' <div style="color: red"> Spam </div>'
+          msg_category = ' <div id="rcorners" style="color: red"> Spam </div>'
         }
 
         // $('div.message_holder').append('<div><b style="color: blue">' + msg.user_name + '</b> '  + msg_category + msg.message + '</div>')
         $('table.table').append(
-          '<tr><td style="color: blue">' + msg.user_name + '</td><td>' + msg_category + '</td><td>' + msg.message + '</td></tr>'
+          '<tr><td style="color: blue">' + msg.user_name + '</td><td>' + msg_category + '</td><td style="text-align: left;">' + msg.message + '</td></tr>'
         )
       }
     })

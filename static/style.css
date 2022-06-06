@@ -9,3 +9,10 @@ body {
     text-align: center;
     background: #f3f3f3;
 }
+
+#rcorners {
+    border-radius: 25px;
+    border: 1px solid #73AD21;
+    padding: 0.2rem;
+    font-size: 0.75rem;
+  }
